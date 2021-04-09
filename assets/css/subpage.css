@@ -1,6 +1,6 @@
 body {
     padding: 0px;
-    margin: 0px;
+    margin:0;
     background-color: #F0EDE6;
     color: #03463A;
 }
@@ -10,31 +10,150 @@ body {
     color: #9C0101;
 }
 
+.fever .remedy-container {
+    border: 2px solid #9C0101;
+}
+
+.grid-line-fever {
+    background-color: #9C0101;
+}
+
+.anti-helminthic{
+    background-color: #FFD9A0;  
+    color: #BF400A;
+}
+
+.anti-helminthic .remedy-container {
+    border: 2px solid #BF400A;
+}
+
+.grid-line-anti-helminthic {
+    background-color: #BF400A;
+}
+
+.gout {
+    background-color: #CFDCF0;  
+    color: #193185;
+}
+
+.gout .remedy-container {
+    border: 2px solid #193185;
+}
+
+.high-blood-sugar {
+    background-color: #F2E5D8;
+    color: #C94D08;
+}
+
+.high-blood-sugar .remedy-container {
+    border: 2px solid #C94D08;
+}
+
+.grid-line-gout {
+    background-color:#193185;
+}
+
+.kidney-stones {
+    background-color: #FFDBDB;  
+    color: #117664;
+}
+
+.kidney-stones .remedy-container {
+    border: 2px solid #117664;
+}
+
+.grid-line-kidney-stones {
+    background-color:#117664;
+}
+
+.high-cholesterol {
+    background-color: #E8E1EC;  
+    color: #CC1212;
+}
+
+.high-cholesterol .remedy-container {
+    border: 2px solid #CC1212;
+}
+
+.grid-line-high-cholesterol {
+    background-color:#CC1212;
+}
+
+.general-health {
+    background-color: #FACDB9;
+    color: #224D13;
+}
+
+.general-health .remedy-container {
+    border: 2px solid #224D13;
+}
+
+.grid-line-general-health {
+    background-color:#224D13;
+}
+
+.pain {
+    background-color: #D3E5CD;
+    color: #424B6B;
+}
+
+.pain .remedy-container {
+    border: 2px solid #424B6B;
+}
+
+.grid-line-pain {
+    background-color: #424B6B;
+}
+
+.oral-dental {
+    background-color: #FFEAA0;
+    color: #264EB8
+}
+
+.oral-dental .remedy-container {
+    border: 2px solid #264EB8;
+}
+
+.grid-line-oral-dental {
+    background-color: #264EB8;
+}
+
+.respiratory {
+    background-color: #E6EDF6;
+    color: #CC1212;
+}
+
+.respiratory .remedy-container {
+    border: 2px solid #CC1212;
+}
+
+.grid-line-respiratory {
+    background-color: #CC1212;
+}
+
+.respiratory-border {
+    border: 2px solid #CC1212;
+}
+
+.skin {
+    background-color: #FBF5D7;
+    color: #DB491B;
+}
+
+.skin .remedy-container {
+    border: 2px solid #DB491B;
+}
+
+.grid-line-skin {
+    background-color: #DB491B;
+}
+
+.skin-border {
+    border: 2px solid #DB491B;
+}
+
 p {
     margin: 0px;
-}
-
-.nav {
-    width: auto;
-    height: 50px;
-    position: fixed;
-    background-color: #F0EDE6;
-    display: table;
-    margin-top: 30px;
-    margin-left: 30px;
-    z-index: 30;
-    border-left: 1px solid #03463A;
-    border-top: 1px solid #03463A;
-    border-bottom: 1px solid #03463A;
-}
-
-
-.navcontainer {
-    border-right: 1px solid #03463A;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .name {
@@ -53,9 +172,15 @@ p {
     flex-direction: row;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     font-family: 'Work Sans';
     position: absolute;
-    width: 100%;
+    width: 100vw;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+
+  
 }
 
 .content-container-column {
@@ -64,29 +189,12 @@ p {
     display: flex;
     justify-content: center;
     font-family: 'Work Sans';
-    position: absolute;
-    padding: 50px;
-    /* background-color: red; */
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.skin {
-    background-color: #FBF5D7;
-    color: #DB491B;
-    border: 1px solid #DB491B;
-}
-
-.skin .tags {
-    border: 1px solid #DB491B;
-}
-
-.respiratory {
-    background-color: #E6EDF6;
-    color: #CC1212;
-    border: 1px solid #CC1212;
-}
-
-.respiratory .tags {
-    border: 1px solid #CC1212;
+.bottom {
+    padding-bottom: 80px;
 }
 
 .h2 {
@@ -100,6 +208,7 @@ p {
     position: fixed;
     top: 20px; 
     right: 20px;
+    z-index: 20;
 }
 
 .site-name-container {
@@ -113,7 +222,13 @@ p {
     font-size: 80px;
     font-family: plantin, serif;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.subhead {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .columnname {
@@ -127,25 +242,69 @@ p {
     position: relative;
     width: 500px;
     height: 100%;
-    border-radius: 10px;
     padding: 50px;
     margin: 25px;
-    margin-bottom: 100px;
     float: left;
 }
 
-.fever .remedy-container {
-    border: 1px solid #9C0101;
-}
-
-.row {
+.row-1 {
     margin-top: 10px;
     margin-bottom: 15px;
     display: flex;
+    column-gap: 28px;
+}
+
+.row-2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    column-gap: 28px;
 }
 
 .row-item {
-    flex-direction: row;
+    float: left;
+    /* background-color: red; */
+}
+
+.row-item-1 {
+    width: 20%;
+}
+
+.row-item-2 {
+    width: 80%;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+}
+
+ol { 
+    padding-left: 20px; 
+    list-style: outside decimal;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+ul { 
+    padding-left: 20px; 
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.grid-line {
+    height: 1px;
+    opacity: 0.3;
+}
+
+.grid-line-extra-top {
+    margin-top: 40px;
+}
+
+.header {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .4;
 }
 
 .bodytype {
@@ -153,6 +312,7 @@ p {
     font-size: 16px;
     padding-top: 0;
     margin-top: 0;
+    line-height: 130%;
 }
 
 .rowname {
@@ -226,8 +386,19 @@ p {
     font-weight: 600;
 }
 
-.links {
-    font-size: 13px;
+.links  {
+    font-size: 12px;
+    line-height: 12px;
+    opacity: .4;
+}
+
+.links p {
+    margin-top: 4px;
+    word-wrap: break-word;
+}
+
+.links a {
+    word-wrap: break-word;
 }
 
 .sticker {
@@ -244,11 +415,23 @@ p {
 }
 
 .plant-img {
-    float: right;
+    /* float: right; */
+    width: 300px;
+    border: 2px solid #03463A;
+    position: relative;
+    margin: 30px;
 }
 
+.plant-img img {
+    display: block;
+    width: 300px;
+}
 @media (max-width:375px)  { 
     .content-container-row {
+        flex-direction: column;
+    }
+
+    .row-2{
         flex-direction: column;
     }
 
