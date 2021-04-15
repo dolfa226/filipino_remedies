@@ -1,20 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-
-gsap.to(".img-right", { 
-    scrollTrigger: {
-        trigger: ".img-right",
-        start: "top center",
-        end: "top 500",
-        scrub: 1,
-        // markers: true,
-    },
-    y: 200,
-    ease: "none",
-    duration: 3
-})
-
-
 gsap.to(".holistic", { 
     autoAlpha: 1,
     stagger: {
@@ -44,11 +29,9 @@ gsap.to(".evil", {
         scrub: 1,
         // markers: true,
     },
-    x: 200,
+    x: 50,
     ease: "none",
     duration: .2
 })
-
-
 
 

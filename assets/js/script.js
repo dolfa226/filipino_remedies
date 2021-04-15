@@ -3,8 +3,7 @@ $(document).ready(function() {
       this.scrollLeft -= (delta);
       e.preventDefault();
     });
-
     
-
 });
+
 

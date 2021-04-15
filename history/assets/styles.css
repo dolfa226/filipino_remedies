@@ -5,10 +5,9 @@ body {
     color: #03463A;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
-
+} */
 
 p {
     margin: 0px;
@@ -50,9 +49,9 @@ a:visited {
 
 .navcontainer-right {
     float: right;
-    background-color: yellow;
     margin-right: 400px;
 }
+
 .name {
     font-family: plantin, serif;
     font-size: 20px;
@@ -69,24 +68,38 @@ a:visited {
     transform:translateY(-50%);  
 }
 
+.main-container {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.section-container {
+    width: 100%;
+    /* background-color: lightgrey; */
+    display: flex;
+    justify-content: center;
+    /* border-bottom: 2px solid #C7BEA9; */
+}
+
 .section {
-    padding: 100px;
+    padding-bottom: 30px;
+    width: 700px;
+    /* background-color: lightyellow; */
+}
+
+.section-2 {
+    width: auto;
+}
+
+.section-text {
+    padding-bottom: 100px;
 }
 
 
-.section2 {
-    color: #03463A;
- }
-
 .section3 {
-    background-color: #03463A;
-    color: #F0EDE6;
     height: 850px;
 }
 
-.section4 {
-    color: #D9741A;
-}
 
 .intro-title {
     margin-top: 200px;
@@ -94,19 +107,13 @@ a:visited {
     /* background-color: yellow; */
 }
 
-
-.timeframe {
-    font-family: plantin, serif;
-    font-weight: 600;
-    font-size: 24px;
-    padding-bottom: 10px;
-}
-
 .allcaps {
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 20px
 }
 
 .square {
@@ -116,28 +123,57 @@ a:visited {
 }
 
 .h1 {
+    font-size: 70px;
     font-family: plantin, serif;
-    font-weight: 300;
-    font-size: 150px;
-    position: relative;
+    font-weight: 600;
+    line-height: .9em;
+    margin-top: 30px;
 }
 
 .body {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
-    margin-top: 72px;
     width: 500px;
+    padding-top: 15px;
+    padding-top: 15px;
+    width: 700px;
+}
+
+.article-section {
+    margin-top: 40px;
+}
+
+.callout {
+    font-family: plantin, serif;
+    font-size: 24px;
+    font-style: italic;
+    margin-left: 100px;
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 2px solid #03463A;
 }
 
 
 .h2 {
     font-family: 'Work Sans';
     font-size: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
 }
 
 .h3 {
     font-size: 40px;
     font-family: plantin, serif;
+}
+
+.translation {
+    font-family: plantin, serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;
 }
 
 .title{
@@ -148,23 +184,14 @@ a:visited {
     margin-left: 50px;
 }
 
-
-.translation {
-    font-family: plantin, serif;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 45px;
-}
-
 .icon svg:hover {
     fill: #F0EDE6;
 }
 
-.img-grid {
-    position: relative;
+.section-img-grid {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    background-color: yellow;
 }
 
 .img-container {
@@ -175,28 +202,37 @@ a:visited {
 }
 
 .img-item {
-    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-item-3 {
+    display: flex;
+    flex-direction: column;
 }
 
 .caption {
-    font-family: 'Work Sans';
-    font-size: 15px;
+    font-family: plantin, serif;
+    font-size: 12px;
     position: relative;
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-    padding-left: 10px;
-
+    padding-top: 5px;
+    font-weight: 600;
 }
 
+.caption-3 {
+    width: 300px;  
+}
 .holistic {
     opacity: 0;
     float: left;
     padding-right: 20px;
 }
 
+.holistic-container {
+    margin-top: 100px;
+}
+
 .container {
-    width: 1000px;
-    height: 300px;
     position: relative;
     /* background-color: yellow; */
 }
@@ -204,6 +240,8 @@ a:visited {
 
 .stagger-type {
     position: relative;
+    height: 300px;
+    width: 1000px;
 }
 
 .img-overlap {
@@ -229,9 +267,19 @@ a:visited {
 .evil {
     opacity: 0;
     float: left;
+    padding-right: 10px;
 }
 
-.callout {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.year {
+    font-size: 26px;
+    margin-right: 5px;
+    font-family: plantin, serif;
+    font-weight: 600;
+}
+
+.img-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
